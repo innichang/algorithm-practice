@@ -1,0 +1,22 @@
+function fibonacci(n) {
+  let arr = [0,1];
+  for(let i = 2; i < n; i++) {
+    let newNumber = arr[i-1] + arr[i-2];
+    arr.push(newNumber);
+  };
+  return arr;
+};
+
+Since only 1 loop exists in the function, O(n)
+
+
+
+
+
+//Recursive
+function recursiveFibonacci(n) {
+  if (n<2) return n;
+  return recursiveFibonacci(n-1) + recursiveFibonacci(n-2);
+}
+
+Time complexity is O(2^n) which is horrible
