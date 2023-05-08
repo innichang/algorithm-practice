@@ -1,0 +1,25 @@
+What is recursion?
+Recursion is a problem solving technique where a big problem is broken down into smaller instances of the same problem.
+
+Recursion - a function calling itself.
+
+Why do we use recursion?
+It simplies the big problem.
+
+I want to talk about when it's bad to choose recursion as the problem solving technique.
+
+  1. When the problem has a linear structure or can be solved iteratively using loops.
+  2. When the depth of recursion becomes too large -> stack overflow error or slows down program.
+  3. Hard to understand or main if recursion is used
+
+When it's good to use recursion.
+
+  1. When the problem has a recursive structure or can be naturally divided into sub-problems.
+  2. When size of the problem is not too large and depth of recursion is not too deep.
+  3. When the code is easier to write and understand using recursion rather than iterative structure.
+  
+  Examples)
+  
+  1. Tree traversal: ?
+  2. Search and pathfinding: ?
+  3. Sorting: ?
