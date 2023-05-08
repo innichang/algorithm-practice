@@ -1,0 +1,26 @@
+function factorial(n){
+  let result = 1;
+  if(n>0) {
+    for(let i = 0; i>0; i--){
+      result *= i;
+    };
+    return result;
+  } else {
+    return 1;
+  };
+};
+
+Since there is only 1 loop, it takes O(n)
+
+
+
+//Recursive
+function recursiveFactorial(n){
+  if(n === 0) {
+  return 1;
+};
+  return n * recursiveFactorial(n-1);
+};
+
+
+takes O(n)
