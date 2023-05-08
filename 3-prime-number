@@ -1,0 +1,27 @@
+function isPrime(n){
+  if(n<2){
+    return false;
+  }
+  for(let i = 2; i < n; i++) {            
+    if(n%i === 0) {
+      return false;
+    };
+  };
+  return true;
+};
+
+O(n) complexity (only 1 loop)
+
+In the conditions of the loop, where it's set to i < n now can be optimized by using a certain characteristic of composite numbers.
+
+When we look at a number for example 24. It has divisors of 2,3,4,6,8,12 excluding itself and 1.
+
+The square root of 24 is 4.89. We can see that the number 4 is less than 4.89.
+
+Another example,35 has the divisor of 5 and 7 and the square root of 35 is 5.91.
+
+So what?
+Integers larger than the square root of the number doesn't need to be checked.
+
+How can we update the condition statement?
+We can change the limit to i < Math.sqrt(n), significantly reducing the iterations of the for loop.
